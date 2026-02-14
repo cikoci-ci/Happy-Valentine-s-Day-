@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg"></div>
+    <section class="section1">
+        <div class="childSection1">
+            <h2>Happy Valentine's Day!</h2>
+            <img src="img/Myaowl Sticker by ACHTUNG - Find & Share on GIPHY.gif" alt="">
+            <h3>(｡•̀ᴗ•́｡)</h3>
+            <h3>Click the next button!!!</h3>
+            <a href="music.html" class="tombol">
+                <button class="textTombol">Next</button>
+            </a>
+        </div>
+    </section>
+    <style>
+        body {
+            margin: 0;
+            background: #e9cbcb;
+        }
+
+        .bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            width: 20px;
+            height: 20px;
+            background-image: url('img/heart.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: floatUp linear forwards;
+        }
+
+        @keyframes floatUp {
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        .section1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: blue; */
+            height: 100vh;
+        }
+        
+        .childSection1 {
+            justify-content: center;
+            display: grid;
+            place-items: center;
+            position: relative;
+            z-index: 10;
+            font-family: "Poppins", sans-serif;
+            /* background-color: red; */
+        }
+
+        .childSection1 h2 {
+            size: 20px;
+        }
+        
+        .tombol {
+            justify-content: center;
+            display: grid;
+            place-items: center;
+            text-decoration: none;
+            
+        }
+        
+        .tombol .textTombol {
+            width: 70px;
+            aspect-ratio: 5/3;
+            cursor: pointer;
+            border-radius: 20px;
+            background-color: rgb(234, 62, 62);
+            color: white;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>

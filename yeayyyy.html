@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg"></div>
+    <section class="motherKotak">
+        <div class="kotak">
+            <div class="isiKotak">
+                <img src="img/message.gif" alt="">
+            </div>
+            <div class="message">
+                <p>
+                    halooo!!!!
+                    <br>Bukan Happy Valentine, tapi selamat hari sayang dedek cayang(tiap hari sih heheh, judul web nya cuman biar ada judul XD)🥳🥳
+                </p>
+            </div>
+        </div>
+    </section>
+    <style>
+        body {
+            margin: 15px;
+            background: #e9cbcb;
+        }
+
+        .bg {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            pointer-events: none;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            width: 20px;
+            height: 20px;
+            background-image: url('img/heart.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            animation: floatUp linear forwards;
+        }
+
+        @keyframes floatUp {
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        .motherKotak {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* background-color: blue; */
+            
+        }
+
+        .kotak {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* background-color: red; */
+            z-index: 10;
+
+        }
+
+        .isiKotak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .isiKotak img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .message {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(242, 192, 192);
+            margin: 10px;
+            border-radius: 20px;
+            font-family: "Poppins", sans-serif;
+            border: solid 1px black;
+        }
+
+        .message p {
+            margin: 15px;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
